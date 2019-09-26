@@ -7,7 +7,7 @@ app.set('port', process.env.PORT || 7600);
 
 app = configure(app);
 
-mongoose.connect('mongodb://localhost:27017/kluster', {useNewUrlParser: true});
+mongoose.connect('mongodb://heroku_qxzllfb9:ljdvspmmnfvjedgoqo0g8ocaeg@ds139480.mlab.com:39480/heroku_qxzllfb9', {useNewUrlParser: true});
 
 mongoose.connection.on('error', console.error.bind(console, 'Connection Error'));
 
