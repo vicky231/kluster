@@ -3,7 +3,7 @@ let express = require('express');
 let exphbs = require('express-handlebars');
 let path = require('path');
 let favicon = require('serve-favicon');
-let morgan = require('morgan');
+// let morgan = require('morgan');
 let multer = require('multer');
 let bodyParser = require('body-parser');
 let moment = require('moment');
@@ -17,7 +17,7 @@ let mongoStore = require('connect-mongo')(session);
 
 module.exports = function(app){
 	app.use(favicon(path.join(__dirname, '../public', 'img', 'favicon.ico')));
-	app.use(morgan('dev'));
+	// app.use(morgan('dev'));
 	app.use(bodyParser.urlencoded({extended:false}));
 	app.use(bodyParser.json());
 	app.use(expressValidator());
